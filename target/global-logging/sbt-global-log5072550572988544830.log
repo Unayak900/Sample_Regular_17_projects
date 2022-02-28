@@ -1,0 +1,122 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.6.2 (Private Build Java 1.8.0_312)
+[debug]       Load.loadUnit: plugins took 818.167444ms
+[debug]       Load.loadUnit: defsScala took 0.771971ms
+[debug] [Loading] Scanning directory /home/hduser/.sbt/1.0/plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/hduser/.sbt/1.0/plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 133.988527 ms
+[debug]           Load.resolveProject(global-plugins) took 549.056005ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: /home/hduser/.sbt/1.0/plugins, plugins: List(<none>))) took 821.479912ms
+[debug] [Loading] Done in /home/hduser/.sbt/1.0/plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 976.056103ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.692743ms
+[debug]     Load.loadUnit(file:/home/hduser/.sbt/1.0/plugins/, ...) took 1844.504963ms
+[debug]   Load.apply: load took 2840.554467ms
+[debug]   Load.apply: resolveProjects took 18.785283ms
+[debug]   Load.apply: finalTransforms took 447.192147ms
+[debug]   Load.apply: config.delegates took 76.59646ms
+[debug]   Load.apply: Def.make(settings)... took 4598.186602ms
+[debug]   Load.apply: structureIndex took 1205.877382ms
+[debug]   Load.apply: mkStreams took 21.073054ms
+[info] loading global plugins from /home/hduser/.sbt/1.0/plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 21220.575422ms
+[debug]           Load.loadUnit: plugins took 189.144594ms
+[debug]           Load.loadUnit: defsScala took 0.015298ms
+[debug] [Loading] Scanning directory /home/hduser/IdeaProjects/Sample_Regular_17_projects/project
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in /home/hduser/IdeaProjects/Sample_Regular_17_projects/project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 15.213854 ms
+[debug]               Load.resolveProject(sample_regular_17_projects-build) took 2.748428ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id sample_regular_17_projects-build, base: /home/hduser/IdeaProjects/Sample_Regular_17_projects/project, plugins: List(<none>))) took 19.324963ms
+[debug] [Loading] Done in /home/hduser/IdeaProjects/Sample_Regular_17_projects/project, returning: (sample_regular_17_projects-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 26.195976ms
+[debug]           Load.loadUnit: cleanEvalClasses took 0.032195ms
+[debug]         Load.loadUnit(file:/home/hduser/IdeaProjects/Sample_Regular_17_projects/project/, ...) took 217.312307ms
+[debug]       Load.apply: load took 221.101494ms
+[debug]       Load.apply: resolveProjects took 0.326497ms
+[debug]       Load.apply: finalTransforms took 24.550108ms
+[debug]       Load.apply: config.delegates took 0.987502ms
+[debug]       Load.apply: Def.make(settings)... took 375.09665ms
+[debug]       Load.apply: structureIndex took 92.600258ms
+[debug]       Load.apply: mkStreams took 0.00555ms
+[info] loading project definition from /home/hduser/IdeaProjects/Sample_Regular_17_projects/project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 4145.571462ms
+[debug]     Load.loadUnit: defsScala took 0.009628ms
+[debug] [Loading] Scanning directory /home/hduser/IdeaProjects/Sample_Regular_17_projects
+[debug]       Load.loadUnit: mkEval took 18.035943ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 5.032715 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 5.29484ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: /home/hduser/IdeaProjects/Sample_Regular_17_projects, plugins: List(<none>))) took 13.865586ms
+[debug] [Loading] Done in /home/hduser/IdeaProjects/Sample_Regular_17_projects, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 11346.109978ms
+[debug]     Load.loadUnit: cleanEvalClasses took 23.684176ms
+[debug]   Load.loadUnit(file:/home/hduser/IdeaProjects/Sample_Regular_17_projects/, ...) took 15517.044454ms
+[debug] Load.apply: load took 15522.59091ms
+[debug] Load.apply: resolveProjects took 0.183872ms
+[debug] Load.apply: finalTransforms took 29.044527ms
+[debug] Load.apply: config.delegates took 0.837767ms
+[debug] Load.apply: Def.make(settings)... took 223.105295ms
+[debug] Load.apply: structureIndex took 45.934005ms
+[debug] Load.apply: mkStreams took 0.004577ms
+[info] set current project to Sample_Regular_17_projects (in build file:/home/hduser/IdeaProjects/Sample_Regular_17_projects/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(shell, None, None)
+[info] sbt server started at local:///home/hduser/.sbt/1.0/server/487b233da678edbb1504/sock
+[debug] Writing bsp connection file
+[info] started sbt server
