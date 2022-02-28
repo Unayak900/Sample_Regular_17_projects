@@ -8,12 +8,14 @@ import java.util.Locale
 
 object SparkMovies {
 
-  def getDateFromString(date:String): java.sql.Timestamp =
+  def getDateFromString(date:String): java.sql.Date =
     {
-    val formatter = new SimpleDateFormat("MMM DD YYYY", Locale.ENGLISH)
-    val newformatted = new java.sql.Timestamp(formatter.parse(date).getTime)
+    val formatter = new SimpleDateFormat("MMMMM dd yyyy", Locale.ENGLISH)
+    val newformatted = new java.sql.Date(formatter.parse(date).getTime)
     return newformatted
      }
+
+
     val getDateFromString_udf = udf(getDateFromString(_))
 
 
@@ -41,12 +43,9 @@ object SparkMovies {
     // Date function
 
 
-
-
-
-    val df3 = df2.withColumn("ReleaseDate",getDateFromString_udf(col("ReleaseDate")))
-     df3.show(3,false)
-
+    val df3 = df2.limit(2)
+    val df4 = df3.withColumn("ReleaseDate",getDateFromString_udf(col("ReleaseDate")))
+    df4.show(2,false)
     /*var strDate = "December 16 2015"
     //var format = DateTimeFormat.forPattern("MMM DD yyyy")
     val formatter = new SimpleDateFormat("MMM DD yyyy",Locale.ENGLISH)
