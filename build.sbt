@@ -10,6 +10,12 @@ libraryDependencies += "org.apache.spark" %% "spark-sql" % "3.1.2" % "provided"
 // https://mvnrepository.com/artifact/org.apache.spark/spark-hive
 libraryDependencies += "org.apache.spark" %% "spark-hive" % "3.1.2" % "provided"
 
+// https://mvnrepository.com/artifact/org.apache.spark/spark-catalyst
+libraryDependencies += "org.apache.spark" %% "spark-catalyst" % "3.1.2" % Test
+
+// https://mvnrepository.com/artifact/com.typesafe/config
+libraryDependencies += "com.typesafe" % "config" % "1.4.1"
+
 lazy val root = (project in file("."))
   .settings(
     name := "Sample_Regular_17_projects"
